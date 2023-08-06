@@ -55,6 +55,7 @@ body{
     animation: fadeInAnimation ease 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    
 }
 .container2{
     padding: 10px 5%;
@@ -265,6 +266,7 @@ hr{
 
 .blurb{
     margin-left: 100px; 
+    margin-top: 15px;
 }
 
 
@@ -556,11 +558,16 @@ form input, form textarea{
 
 .copyright{
     background-color: #262626;
-    padding-top: 10px;
+    padding: 5px;
 }
 
 .copyright p{    
     margin-left: 5px;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: blueviolet;
 }
 
 .copyright a{

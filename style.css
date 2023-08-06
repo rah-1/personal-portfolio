@@ -556,10 +556,73 @@ form input, form textarea{
 
 .copyright{
     background-color: #262626;
+    padding-top: 10px;
 }
 
 .copyright p{    
     margin-left: 5px;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+
+.pictures h1{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.pictures xd{
+    color: blueviolet;
+}
+
+.pictures h2{
+    margin-top: 75px;
+    margin-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.img-set{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+.img-set img{
+    margin-left: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 25%;
+    object-fit: cover;
+    display: block;
+}
+
+.cx nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 10px;
+}
+
+.cx nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    position: absolute;
+    background-color: blueviolet;
+    left: 0px;
+    bottom: -5px;
+    transition: 0.5s;
 }
 
 
@@ -710,4 +773,38 @@ form input, form textarea{
         width: 100%;
     }
 
+
+    .pictures h1{
+        margin-top: 75px;
+        margin-bottom: 25px;
+        text-align: center;
+        justify-content: center;
+        margin-left: 0 ;
+        
+    }
+    
+    .pictures h2{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .img-set{
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .img-set img{
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 25px;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
 }
+
+

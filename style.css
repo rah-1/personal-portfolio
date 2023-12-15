@@ -269,6 +269,11 @@ hr{
     margin-top: 15px;
 }
 
+.blurb a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
 
 .proj-list{
     display: grid;

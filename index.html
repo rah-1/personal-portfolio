@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="android-chrome-192x192.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -38,7 +39,7 @@
         <div class="container22">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="pics/slightlymodifiedhead_crop.jpg">
+                    <img id="pfp" src="pics/slightlymodifiedhead_crop.jpg">
                 </div>
                 <div class="about-col-2">
                     <sh1 class="sub-title">About <pluh>Me</pluh>
@@ -148,7 +149,7 @@
                         <br><br><br><br><br><br><br><br><br><br><br><br>
                         <sh1 class="sub-title-gal">Kiyomizu-dera Temple</pluh>
                         </sh1>
-                        <p> Kyoto, Japan // June 2023
+                        <p> Kyoto, Japan // June 2022
 
                         </p>
 
@@ -161,7 +162,7 @@
                         <br><br><br><br>br><br><br><br><br><br><br><br><br><br>
                         <sh1 class="sub-title-gal">Super Nintendo World</pluh>
                         </sh1>
-                        <p> Osaka, Japan // July 2023
+                        <p> Osaka, Japan // July 2022
 
                         </p>
 
@@ -179,7 +180,7 @@
                         <br><br><br><br><br><br><br><br><br><br><br><br>
                         <sh1 class="sub-title-gal">Arashiyama Bamboo Forest</pluh>
                         </sh1>
-                        <p> Kyoto, Japan // June 2023
+                        <p> Kyoto, Japan // June 2022
 
                         </p>
 
@@ -192,7 +193,7 @@
                         <br><br><br><br>br><br><br><br><br><br><br><br><br><br>
                         <sh1 class="sub-title-gal">Tokyo Tower</pluh>
                         </sh1>
-                        <p> Tokyo, Japan // July 2023
+                        <p> Tokyo, Japan // July 2022
 
                         </p>
 
@@ -210,7 +211,7 @@
                         <br><br><br><br><br><br><br><br><br><br><br><br>
                         <sh1 class="sub-title-gal">Mt. Fuji Base Camp</pluh>
                         </sh1>
-                        <p> Mt. Fuji, Japan // July 2023
+                        <p> Mt. Fuji, Japan // July 2022
 
                         </p>
 
@@ -255,11 +256,43 @@
         </div>
     </div>
 
+    <script src='src/elevator.js'></script>
+
+    
+    <script>
+    // Elevator script included on the page, already.
+
+    window.onload = function() {
+    var elevator = new Elevator({
+        element: document.querySelector('.copyright'),
+        duration: 750
+    });
+    }
+    </script>
+
+    
+
 
     <div class="copyright">
-        <p>Made by Rahul Chari <a href="/gallery.html" target="_blank">:)</a></p>
+        <p>Made by Rahul Chari <a href="/gallery.html" target="_blank">:)</a>
+        </div></p>
     </div>
 
+      <script src="https://unpkg.com/konami@1.6.3/konami.js"></script>
+
+    <script>
+        var swap = true;
+        const audio_src = ["src/heheheha.mp3", "src/thumbsup.mp3", "src/crying.mp3", "src/grr.mp3"];
+        const easterEgg = new Konami(() => {
+            const rando = audio_src[Math.floor(Math.random() * audio_src.length)];
+            var snd = new Audio(rando);
+            snd.currentTime=10;
+            snd.play();
+            snd.currentTime=0;
+            if (swap) {document.getElementById("pfp").src="pics/whowantme.jpg";swap=false;}
+            else {document.getElementById("pfp").src="pics/slightlymodifiedhead_crop.jpg";swap=true;}            
+        })
+    </script>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 

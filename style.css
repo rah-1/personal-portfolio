@@ -156,9 +156,10 @@ hr{
 }
 
 .about-col-1 img{
-    margin-top: 35px;
+    margin-top: 80px;
     margin-bottom: 45px;
-    width: 75%;
+    margin-left: 25px;
+    width: 80%;
     border-radius: 15px;
     object-fit: fill
 }
@@ -171,7 +172,7 @@ hr{
 .about-col-2 p{
     flex-basis: 60%;
     color: white;
-    margin-right: 260px;
+    margin-right: 200px;
     margin-top: 17px;
     margin-bottom: 5px;
 } 
